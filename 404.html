@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>404 Redirect</title>
+	</head>
+	<body>
+		<script>
+			const path = window.location.pathname.slice(1);
+			localStorage.setItem('coming-from', path);
+			console.log('Setting redirect request to', path);
+			window.location.href = 'https://nbasargin.github.io/WebSurfels-Demo/';
+		</script>
+		<div>
+			Redirecting to base url: https://nbasargin.github.io/WebSurfels-Demo/
+		</div>
+	</body>
+</html>
